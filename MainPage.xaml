@@ -5,7 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25"
-        BackgroundColor="LightBlue">
+        BackgroundColor="Beige">
 
             <Grid Margin="20">
                 <Grid.RowDefinitions>
@@ -17,18 +17,20 @@
                 </Grid.RowDefinitions>
                 
                 <Label Text="Username" Grid.Row="0" VerticalOptions="Center"/>
-                <Entry Grid.Row="1" Placeholder="Enter your username"/>
+                <Entry x:Name="LoginUsername"  Grid.Row="1" Placeholder="Enter your username" BackgroundColor="White" TextColor="Black"/>
 
                 <Label Text="Password" Grid.Row="2" VerticalOptions="Center"/>
-                <Entry Grid.Row="3" Placeholder="Enter your password"/>
+                <Entry x:Name="LoginPassword" Grid.Row="3" Placeholder="Enter your password" BackgroundColor="White" TextColor="Black" IsPassword="True"/>
 
                 <Button
                 x:Name="CounterBtn"
-                Text="Click to login" 
+                Text="Click" 
                 SemanticProperties.Hint="Click to login"
                 Grid.Row="4"
                 Clicked="OnCounterClicked"
-                VerticalOptions="Center" />
+                VerticalOptions="Center"  BackgroundColor="Bisque"/>
+                
+                
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
